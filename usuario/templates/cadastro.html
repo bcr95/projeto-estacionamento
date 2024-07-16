@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_usuario.html' %}
 {% block content %}
         <section class="area-cadastro">
             <div class="container">
@@ -7,15 +7,15 @@
                     <div class="col-md-4">
                         <h2>Cadastre-se</h2>
                         <hr>
-                        <form action="{% url 'cadastrar_cliente' %}" method="post" class="form-cadastro">
+                        <form action="{% url 'cadastro' %}" method="post" class="form-cadastro">
                             {% csrf_token %}
                             <div class="form-group">
-                            <label for="nome_usuario">Nome de usuário:</label>
-                            <input type="text" class="form-control" name="nome_usuario">
+                                <label for="nome_usuario">Nome de usuário:</label>
+                                <input type="text" class="form-control" name="username">
                             </div>
                             <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" name="email">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" name="email">
                             </div>
                             <div class="form-group">
                                 <label for="senha">Senha:</label>

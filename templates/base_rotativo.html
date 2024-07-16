@@ -18,14 +18,19 @@
                 <img src="{% static 'rotativo/img/logo.jpeg' %}" width="120" height="80" alt="logotipo">
               </a>
               <ul class="nav justify-content-end">
+                {% if user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'cadastrar_rotativo' %}">RESERVAR VAGA</a>
+                    <a class="nav-link" href="#">Olá, {{ user.username }}</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'reservar' %}">RESERVAR VAGA</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'listar_rotativo' %}">MINHAS RESERVAS</a>
+                  <a class="nav-link" href="{% url 'listar' %}">MINHAS RESERVAS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}">LOGOUT</a>
+                  <a class="nav-link" href="{% url 'logout' %}">LOGOUT</a>
                 </li>
               </ul>
             </nav>

@@ -1,10 +1,12 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
+from .views import reservar, salvar, listar, editar, update, excluir
 
 urlpatterns = [
-    path('cadastrar_rotativo/', views.cadastrar_rotativo, name='cadastrar_rotativo'),
-    path('listar_rotativo/', views.listar_rotativo, name='listar_rotativo'),
-    path('deletar_rotativo/<int:id>', views.deletar_rotativo, name='deletar_rotativo'),
-    path('exibir_rotativo/<int:id>', views.exibir_rotativo, name='exibir_rotativo'),
-    path('editar_rotativo/<int:id>', views.editar_rotativo, name='editar_rotativo'),
+    path('reservar/', reservar, name='reservar'),
+    path('salvar/', salvar, name='salvar'),
+    path('listar/', listar, name='listar'),
+    path('editar/<int:id>', editar, name='editar'),
+    path('update/<int:id>', update, name='update'),
+    path('excluir/<int:id>', excluir, name='excluir'),
 ]

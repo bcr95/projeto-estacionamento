@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'cliente/css/cliente.css' %}">
+    <link rel="stylesheet" href="{% static 'usuario/css/usuario.css' %}">
     <title>Park Metrópole</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
           <div class="col-md-12">
             <nav class="navbar navbar-custom">
               <a class="navbar-brand" href="#">
-                <img src="{% static 'cliente/img/logo.jpeg' %}" width="120" height="80" alt="logotipo">
+                <img src="{% static 'usuario/img/logo.jpeg' %}" width="120" height="80" alt="logotipo">
               </a>
               <ul class="nav justify-content-end">
                 <li class="nav-item">
@@ -28,7 +28,7 @@
                   <a class="nav-link" href="#">CONTATO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login_cliente' %}">LOGIN</a>
+                  <a class="nav-link" href="{% url 'login' %}">LOGIN</a>
                 </li>
               </ul>
             </nav>

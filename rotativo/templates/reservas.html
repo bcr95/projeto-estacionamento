@@ -15,15 +15,15 @@
                           </tr>
                         </thead>
                         <tbody>
-                        {% for item in lista %}
+                        {% for reserva in reservas %}
                           <tr>
-                            <td>{{item.id}}</td>
-                            <td>{{item.data}}</td>
-                            <td>{{item.hora_entrada}}</td>
-                            <td>{{item.hora_saida}}</td>
+                            <td>{{reserva.id}}</td>
+                            <td>{{reserva.data}}</td>
+                            <td>{{reserva.hora_entrada}}</td>
+                            <td>{{reserva.hora_saida}}</td>
                             <td>
-                              <a href="{% url 'exibir_rotativo' item.id %}"><button type="button" class="btn btn-info">Editar</button></a>
-                              <a href="{% url 'deletar_rotativo' item.id %}"><button type="button" class="btn btn-info">Excluir</button></a>
+                              <a href="{% url 'editar' reserva.id %}"><button type="button" class="btn btn-info">Editar</button></a>
+                              <a href="{% url 'excluir' reserva.id %}"><button type="button" class="btn btn-info">Excluir</button></a>
                             </td>
                           </tr>
                         {% endfor %}

@@ -10,27 +10,27 @@
                     <div class="tabela-cadastro">
                         <table class="table">
                             <tbody>
-                              <tr>
+                            <tr>
                                 <td>Hora avulsa</td>
                                 <td>R$ 6,00</td>
-                              </tr>
+                            </tr>
                             </tbody>
                             <tbody>
                                 <tr>
-                                  <td>Diária</td>
-                                  <td>R$ 25,00</td>
+                                <td>Diária</td>
+                                <td>R$ 25,00</td>
                                 </tr>
                             </tbody>
                             <tbody>
                                 <tr>
-                                  <td>Pernoite</td>
-                                  <td>R$ 20,00</td>
+                                <td>Pernoite</td>
+                                <td>R$ 20,00</td>
                                 </tr>
                             </tbody>
                             <tbody>
                                 <tr>
-                                  <td>Mensalista</td>
-                                  <td>R$ 180,00</td>
+                                <td>Mensalista</td>
+                                <td>R$ 180,00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -44,20 +44,20 @@
                     <h3>Reserve sua vaga</h3>
                     <hr>
                     <div class="form-cadastro">
-                        <form action="{% url 'cadastrar_rotativo' %}" method="post">
+                        <form action="{% url 'salvar' %}" method="post">
                             {% csrf_token %}
                             <div class="form-group">
-                              <label for="data">Data:</label>
-                              <input type="date" class="form-control" name="data">
+                            <label for="data">Data:</label>
+                            <input type="date" class="form-control" name="data">
                             </div>
                             <div class="form-group">
-                              <label for="hora_entrada">Hora de entrada:</label>
-                              <input type="time" class="form-control" name="hora_entrada">
+                            <label for="hora_entrada">Hora de entrada:</label>
+                            <input type="time" class="form-control" name="hora_entrada">
                             </div>
                             <div class="form-group">
                                 <label for="hora_saida">Hora de saida:</label>
                                 <input type="time" class="form-control" name="hora_saida">
-                              </div>
+                            </div>
                             <button type="submit" class="btn btn-warning">Enviar</button>
                         </form>
                     </div>

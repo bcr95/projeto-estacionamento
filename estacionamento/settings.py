@@ -1,5 +1,5 @@
-from pathlib import Path
 import os
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g$&w9k@84q7c%ipk@z56ack7=daldc-tqpo0+05@c&b%decp!@'
+SECRET_KEY = 'django-insecure-9e#q89r%uv$f3t@nd3m1(ve(v8l^r3xsnqi3b1md6jc*9y1v$)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rotativo',
-    'cliente',
+    'usuario',
 ]
 
 MIDDLEWARE = [

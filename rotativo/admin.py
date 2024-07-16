@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import Rotativo
+from .models import Reserva
 
-admin.site.register(Rotativo)
+# Register your models here.
+admin.site.register(Reserva)

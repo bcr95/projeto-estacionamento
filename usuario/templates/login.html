@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_usuario.html' %}
 {% block content %}
         <section class="area-login">
             <div class="container">
@@ -7,11 +7,11 @@
                     <div class="col-md-4">
                         <h2>Login</h2>
                         <hr>
-                        <form action="{% url 'login_cliente' %}" method="post" class="form-login">
+                        <form action="{% url 'login' %}" method="post" class="form-login">
                             {% csrf_token %}
                             <div class="form-group">
                             <label for="nome_usuario">Nome de usuário:</label>
-                            <input type="text" class="form-control" name="nome_usuario">
+                            <input type="text" class="form-control" name="username">
                             </div>
                             <div class="form-group">
                             <label for="senha">Senha:</label>
@@ -22,7 +22,7 @@
                         <hr>
                         <div class="primeiro-acesso">
                             <p>Primeiro acesso?</p>
-                            <p><a href="{% url 'cadastrar_cliente' %}"><button type="submit" class="btn btn-warning">Cadastre-se</button></a></p>
+                            <p><a href="{% url 'cadastro' %}"><button type="submit" class="btn btn-warning">Cadastre-se</button></a></p>
                         </div>
                     </div>
                     <div class="col-md-4"></div>
