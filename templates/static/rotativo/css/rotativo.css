@@ -1,0 +1,43 @@
+/* ----- Menu ----- */
+
+.menu {
+    width: 100%;
+    background-color: #000000;
+}
+
+.menu ul li a {
+    color: #ffffff;
+}
+
+.menu ul li a:hover {
+    color: #ffa600;
+}
+
+.navbar-custom {
+    background-color: #000000;
+}
+
+/* ---------- */
+
+/* ----- Cadastro ----- */
+
+.area-cadastro {
+    padding: 50px;
+}
+
+.tabela-cadastro, .form-cadastro {
+    padding: 10px;
+}
+
+/* ----- Footer ----- */
+
+.rodape {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.rodape p {
+    margin-bottom: 0;
+}

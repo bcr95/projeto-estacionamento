@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+    <title>Park Metrópole</title>
+</head>
+<body>
+    <header class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-custom">
+              <a class="navbar-brand" href="#">
+                <img src="static/home/img/logo.jpeg" width="120" height="80" alt="logotipo">
+              </a>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicos">SERVIÇOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">CONTATO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login_cliente' %}">LOGIN</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="inicio"></section>
+
+    <section class="quem-somos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 historia">
+            <h2>Quem somos</h2>
+            <hr>
+            <p>Park Metrópole é um marco no cenário dos estacionamentos de São Paulo desde sua fundação em 2005. Localizado estrategicamente no coração da metrópole, próximo aos principais centros comerciais e culturais da cidade, o Park Metrópole rapidamente se destacou pela sua infraestrutura moderna e serviço de qualidade.</p>
+
+            <p>Fundado com o compromisso de oferecer segurança, conveniência e eficiência, tornou-se o destino preferido de milhares de paulistanos e visitantes que buscam estacionamento seguro e bem localizado. Ao longo dos anos, o Park Metrópole tem se adaptado às necessidades em constante evolução da cidade, investindo em tecnologia para proporcionar uma experiência ainda mais confortável aos seus clientes.</p>
+          </div>
+          <div class="col-md-6 imagem">
+            <img src="static/home/img/carro.jpeg" alt="carro">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 reserva">
+            <h2>Serviços</h2>
+            <hr>
+
+            <h5>Reserve sua Vaga Online no Park Metrópole!</h5>
+
+            <p>Vantagens exclusivas:</p>
+
+            <ul>
+              <li>Garantia de Vaga: Evite o estresse de procurar estacionamento. Sua vaga está reservada e pronta para você.</li>
+
+              <li>Facilidade e Rapidez: Reserve em segundos através do nosso site ou aplicativo móvel intuitivo.</li>
+
+              <li>Localização Central: Localizado estrategicamente para fácil acesso aos principais pontos da cidade.</li>
+
+              <li>Segurança e Confiabilidade: Estacionamento seguro com vigilância 24 horas.</li>
+
+              <li>Flexibilidade: Escolha entre opções horárias ou diárias, adaptando-se à sua agenda.</li>
+            </ul>
+
+            <p>Estacione com tranquilidade no Park Metrópole. Reserve agora e simplifique sua jornada na cidade!</p>
+          </div>
+          <div class="col-md-6">
+            <img src="static/home/img/logo.jpeg" alt="logotipo">
+            <p class="text-center botao"><a href="{% url 'cadastrar_cliente' %}"><button type="submit" class="btn btn-warning">Cadastre-se e reserve sua vaga!</button></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Unidades</h2>
+            <hr>
+            <h4>Unidade I</h4>
+            <p>Endereço: Rua ABC, nº 123. Centro - São Paulo, SP<br>
+            Telefone: (11) 95555-6777</p>
+            <h4>Unidade II</h4>
+            <p>Endereço: Rua DEF, nº 456. Centro - São Paulo, SP<br>
+            Telefone: (11) 98888-5444</p>
+          </div>
+          <div class="col-md-6">
+            <h2>Contato</h2>
+            <hr>
+            <h4>E-mail</h4>
+            <p>contato@parkmetropole.com.br</p>
+            <h4>Horário de funcionamento</h4>
+            <p>Segunda à Sexta: 7h às 19h<br>
+            Sábado: 7h às 14h<br>
+            Domingo: 8h às 12h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">Todos os direitos reservados | Park Metrópole Estacionamentos e Serviços Ltda</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
